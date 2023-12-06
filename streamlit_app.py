@@ -16,7 +16,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 """
 
 # Everything is accessible via the st.secrets dict:
-
+headers={"authorization":st.secrets["db_usename"],"content-type":"application/json"}
 #st.write("DB username:", st.secrets["db_username"])
 #st.write("DB password:", st.secrets["db_password"])
 #st.write("My cool secrets:", st.secrets["my_cool_secrets"]["things_i_like"])
