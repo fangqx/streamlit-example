@@ -15,6 +15,14 @@ forums](https://discuss.streamlit.io).
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
 
+# Everything is accessible via the st.secrets dict:
+
+st.write("DB username:", st.secrets["db_username"])
+st.write("DB password:", st.secrets["db_password"])
+st.write("My cool secrets:", st.secrets["my_cool_secrets"]["things_i_like"])
+
+# And the root-level secrets are also accessible as environment variables:
+
 
 st.write('hello world')
 st.write('good morning')
